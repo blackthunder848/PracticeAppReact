@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest,  NextResponse } from "next/server";
 
 function ping(){
     return NextResponse.json({
@@ -16,5 +16,8 @@ async function pingwith(req:NextRequest){
         messge:"Another API request",
     })
 }
+
+
+
 
 export {ping as GET, pingwith as POST} 
